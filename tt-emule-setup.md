@@ -8,14 +8,11 @@ The build command listed does not generate the binaries for the unit_tests_api. 
 ```
 cmake -B build_emule -G Ninja \
   -DCMAKE_C_COMPILER=clang-20 -DCMAKE_CXX_COMPILER=clang++-20 \
-  -DCMAKE_AR=/usr/bin/llvm-ar-20 -DCMAKE_RANLIB=/usr/bin/llvm-ranlib-20 \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DTT_METAL_USE_TT_EMULE=ON \
+  -DTT_METAL_USE_EMULE=ON \
   -DTT_METAL_EMULATION=ON \
   -DTT_METAL_BUILD_TESTS=ON \
   -DTTNN_BUILD_TESTS=ON \
   -DTT_EMULE_PATH="$ROOT/tt-emule" \
-  -DENABLE_TRACY=OFF \
   -DTT_INSTALL=OFF
   ```
 
