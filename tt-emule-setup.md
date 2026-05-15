@@ -23,5 +23,7 @@ After the build succeeded with this command and running the regression test, I w
 Leaving these here for quick access, since the exact commands aren't copy-pastable in the original document.
 
 `export CLUSTER_DESCS="$ROOT/tt-metal/tt_metal/third_party/umd/tests/cluster_descriptor_examples"`
+
 `export TT_METAL_EMULE_MODE=1 TT_METAL_SLOW_DISPATCH_MODE=1`
+
 `export TT_METAL_MOCK_CLUSTER_DESC_PATH="$CLUSTER_DESCS/wormhole_N150.yaml"`
