@@ -2,7 +2,7 @@
 
 Setting up with https://github.com/tenstorrent/tt-emule/blob/main/GETTING_STARTED.md:
 
-### Mistake #1: Build command
+### Erroneous Build command
 
 The build command listed does not generate the binaries for the unit_tests_api. This build command worked for me:
 ```
@@ -18,6 +18,10 @@ cmake -B build_emule -G Ninja \
 
 After the build succeeded with this command and running the regression test, I was seeing 19 passes, 124 failed. I cleaned the build and ran it again, and saw 131 passes, 12 failed.
 
-### Mistake #2: env vars
+### env vars
 
-The tutorial mentions setting env vars at step 4, however these are needed when building at step 3 so these should be moved to before the build command at step 3.
+Leaving these here for quick access, since the exact commands aren't copy-pastable in the original document.
+
+`export CLUSTER_DESCS="$ROOT/tt-metal/tt_metal/third_party/umd/tests/cluster_descriptor_examples"`
+`export TT_METAL_EMULE_MODE=1 TT_METAL_SLOW_DISPATCH_MODE=1`
+`export TT_METAL_MOCK_CLUSTER_DESC_PATH="$CLUSTER_DESCS/wormhole_N150.yaml"`
