@@ -39,3 +39,5 @@ These env vars are needed for some new checks in metal/emule.
 `export TT_EMULE_STRICT_CB_BOUNDARY=1`
 
 `export TT_EMULE_STRICT_PADDING=1`
+
+`export TT_EMULE_STRICT_OBJECT_INTENT=1`
