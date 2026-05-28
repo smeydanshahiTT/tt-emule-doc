@@ -22,22 +22,7 @@ After the build succeeded with this command and running the regression test, I w
 
 Leaving these here for quick access, since the exact commands aren't copy-pastable in the original document.
 
-`export CLUSTER_DESCS="$ROOT/tt-metal/tt_metal/third_party/umd/tests/cluster_descriptor_examples"`
-
-`export TT_METAL_EMULE_MODE=1 TT_METAL_SLOW_DISPATCH_MODE=1`
+`export CLUSTER_DESCS="$ROOT/tt-metal/tt_metal/third_party/umd/tests/cluster_descriptor_examples" TT_METAL_EMULE_MODE=1 TT_METAL_SLOW_DISPATCH_MODE=1`
 
 `export TT_METAL_MOCK_CLUSTER_DESC_PATH="$CLUSTER_DESCS/wormhole_N150.yaml"`
 
-### New tests - env vars
-
-These env vars are needed for some new checks in metal/emule.
-
-`export TT_EMULE_STRICT_NOC=1`
-
-`export TT_EMULE_STRICT_TENSOR=1`
-
-`export TT_EMULE_STRICT_CB_BOUNDARY=1`
-
-`export TT_EMULE_STRICT_PADDING=1`
-
-`export TT_EMULE_STRICT_OBJECT_INTENT=1`
